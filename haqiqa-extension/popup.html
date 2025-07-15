@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haqiqa</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/icon48.png" alt="Haqiqa Logo" class="logo">
+            <div class="title-block">
+                <h1>Haqiqa</h1>
+                <p class="tagline">Truth, in real time.</p>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="url-input">Paste a link to verify:</label>
+            <textarea id="url-input" rows="3" placeholder="https://..."></textarea>
+            <button id="verify-button">Verify</button>
+        </div>
+        <div id="results" class="results-container">
+            </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
