@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haqiqa - Truth Engine</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="scene-container"></div>
+
+    <div id="ui-container">
+        <div class="text-center mb-8">
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight">Haqiqa</h1>
+            <p class="text-lg text-blue-300 opacity-80">Truth, in real time.</p>
+        </div>
+
+        <div id="input-form" class="w-full max-w-lg p-6 rounded-xl glass-panel transition-opacity duration-500">
+            <label for="url-input" class="block text-sm font-medium text-gray-300 mb-2">Paste a social media link to verify</label>
+            <div class="flex flex-col sm:flex-row gap-2">
+                <input type="text" id="url-input" class="flex-grow bg-gray-900/50 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="https://...">
+                <button id="verify-button" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                    Verify
+                </button>
+            </div>
+        </div>
+
+        <div id="results-panel" class="w-full max-w-lg p-6 rounded-xl glass-panel mt-8 opacity-0 scale-95 transition-all duration-500 ease-in-out hidden">
+            <h2 class="text-2xl font-bold mb-4 flex items-center" id="result-title">
+                </h2>
+            <div id="result-content" class="space-y-3 text-gray-200">
+                </div>
+            <button id="reset-button" class="w-full mt-6 bg-gray-600 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">Verify Another Link</button>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
