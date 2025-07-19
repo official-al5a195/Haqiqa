@@ -1,0 +1,81 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+.env  # Environment variables for Python (e.g., used by dotenv)
+venv/ # Common virtual environment directories
+.venv/
+htmlcov/ # coverage reports
+.mypy_cache/ # MyPy type checker cache
+
+# Build/Output directories
+build/
+dist/
+public/ # If this is your frontend build output
+
+# Logs
+*.log
+logs/
+
+# Dependencies
+# vendor/ # Uncomment if you use a vendor directory for other languages/frameworks
+
+# Environment variables / Sensitive data
+.env # Crucial for API keys, database credentials etc.
+.flaskenv # Flask specific environment file
+secrets.json
+config/secrets.js # Or similar sensitive config files
+
+# VS Code
+.vscode/ # General VS Code settings. You might want to be more selective.
+# For example, if you want to share settings, but ignore user-specific cache:
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# .vscode/*.bak
+# .vscode/settings.json.bak
+
+# IDE specific files
+.idea/ # IntelliJ, WebStorm, PyCharm etc.
+*.iml
+*.iws
+*.ipr
+*.sublime-project
+*.sublime-workspace
+.DS_Store # Mac specific
+Thumbs.db # Windows specific
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Other common temporary files
+*.swp
+*.bak
+*.tmp
+
+# Test coverage
+coverage/
+
+# Database files
+*.sqlite3
+db.sqlite3 # For example, Django's default SQLite file
+
+# Uploaded media (if not handled by an external storage)
+media/
